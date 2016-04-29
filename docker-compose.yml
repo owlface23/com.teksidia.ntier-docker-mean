@@ -1,0 +1,18 @@
+version: '2'
+
+services:
+
+  data:
+    image: mongo
+    ports:
+      - "27017:27017"
+
+  api:
+    build: CoreBlimeyNodeApi
+    ports:
+      - "8888:8888"
+
+  web:
+    build: CoreBlimeyWeb
+    ports:
+      - "8080:80"

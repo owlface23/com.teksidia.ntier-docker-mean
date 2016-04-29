@@ -1,0 +1,50 @@
+﻿<!doctype html>
+
+<html lang="en" ng-app="testApp">
+<head>
+  <meta charset="utf-8">
+
+  <title>SMBC Service Requests</title>
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+</head>
+
+<body ng-controller="mainController as ctrl">
+  <h1>SMBC Service Requests</h1>
+
+  <p>{{ctrl.message}}</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Reference</th>
+                <th>Description</th>
+                <th>Context</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="item in ctrl.items">
+                <td>{{item.nativeReference}}</td>
+                <td>{{item.description}}</td>
+                <td>{{item.context}}</td>
+            </tr>
+            <tr>
+                <td><input id="name" type="text" ng-model="ctrl.newItem.nativeReference" /></td>
+                <td><input id="description" type="text" ng-model="ctrl.newItem.description" /></td>
+                <td><input id="context" type="text" ng-model="ctrl.newItem.context" /> <a href="" ng-click="ctrl.addServiceRequest()">add</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+  <script src="bower_components/angular/angular.min.js"></script>
+  <script src="app/app.js"></script>
+  <script src="app/constants.js"></script>
+  <script src="app/services/apiService.js"></script>
+  <script src="app/controllers/main.js"></script>
+
+</body>
+</html>
