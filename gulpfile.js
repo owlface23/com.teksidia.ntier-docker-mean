@@ -5,10 +5,10 @@ var bower = require('gulp-bower');
 var node;
 
 var paths = {
-  nodeSource: ['./CoreBlimeyNodeApi/server.js',
-    './CoreBlimeyNodeApi/app/**/*.js'
+  nodeSource: ['./Api/server.js',
+    './Api/app/**/*.js'
   ],
-  nodeStart: './CoreBlimeyNodeApi/server.js'
+  nodeStart: './Api/server.js'
 };
 
 var server = {
@@ -18,7 +18,7 @@ var server = {
 
 gulp.task('bower', function() {
   return bower({
-    cwd: './CoreBlimeyWeb'
+    cwd: './Web'
   });
 });
 
@@ -27,7 +27,7 @@ gulp.task('bower', function() {
  * description: launch the HTML/Angular client
  */
 gulp.task('webclient', function() {
-  gulp.src('./CoreBlimeyWeb/wwwroot')
+  gulp.src('./Web/wwwroot')
     .pipe(webserver({
       host: server.host,
       port: server.port,

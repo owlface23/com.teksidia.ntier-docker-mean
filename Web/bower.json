@@ -1,7 +1,7 @@
 {
-  "name": "js_test",
-  "description": "JS Test project",
-  "main": "kata.js",
+  "name": "web-client",
+  "description": "experimental web client",
+  "main": "wwwroot/index.html",
   "authors": [
     "J Cox"
   ],

@@ -1,5 +1,5 @@
 {
   "proxy": "http://127.0.0.1:3128",
   "https-proxy": "http://127.0.0.1:3128",
-  "directory": "CoreBlimeyWeb/wwwroot/bower_components"
+  "directory": "Web/wwwroot/bower_components"
 }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "author": "Jamie Cox",
-  "main": "CoreBlimeyWeb/index.html",
+  "main": "Web/index.html",
   "dependencies": {
     "express": "~4.13.4",
     "mongoose": "~4.4.13",
@@ -23,7 +23,7 @@
     "phantomjs-prebuilt": "^2.1.5"
   },
   "scripts": {
-    "test": "karma start CoreBlimeyWeb/karma.conf.js"
+    "test": "karma start Web/karma.conf.js"
   },
   "license": "ISC"
 }

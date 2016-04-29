@@ -8,11 +8,11 @@ services:
       - "27017:27017"
 
   api:
-    build: CoreBlimeyNodeApi
+    build: Api
     ports:
       - "8888:8888"
 
   web:
-    build: CoreBlimeyWeb
+    build: Web
     ports:
       - "8080:80"
