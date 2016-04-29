@@ -10,8 +10,15 @@ This is an example 3-Tier app:
 
 To use as a base example of an n-tier app that can be deployed to Docker, using a container for each layer.
 
-### How do I get set up? ###
+### Pre-Requisites ###
 
-I've developed this on Windows, but it could potentially run cross-platform.
+Make sure you have the following installed (I've developed this on Windows, but it could potentially run cross-platform).
 
-#### Steps ####
+* Docker Toolbox
+* Node
+
+#### Developing locally ####
+
+Open 
+
+
