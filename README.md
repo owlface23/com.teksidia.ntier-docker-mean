@@ -1,6 +1,6 @@
 # README #
 
-This is an example 3-Tier app:
+This is an example 3-Tier app, built as a good example of a Docker deployment.
 
 * Web client - written in HTML/Angular
 * API - written in node.js
