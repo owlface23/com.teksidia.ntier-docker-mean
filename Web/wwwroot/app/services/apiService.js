@@ -22,7 +22,8 @@
       }
 
       function getDataFailed(error) {
-        console.log('XHR Failed for getServiceData.' + error.data);
+        //console.log('XHR Failed for getServiceData.' + error.data);
+        alert('XHR Failed for getServiceData.' + error.data);
       }
     }
 
