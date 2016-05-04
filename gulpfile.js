@@ -18,7 +18,7 @@ var server = {
 
 gulp.task('bower', function() {
   return bower({
-    cwd: './Web'
+    cwd: './Web/wwwroot'
   });
 });
 
