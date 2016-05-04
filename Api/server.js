@@ -18,7 +18,7 @@ var port = process.env.PORT || 8888;
 
 // connect to our database
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://13.95.145.127:27017/test');
+mongoose.connect('mongodb://data:27017/test');
 //mongoose.connect('mongodb://'+process.env.MONGO_PORT_27017_TCP_ADDR+':'+process.env.MONGO_PORT_27017_TCP_PORT+'/test');
 
 // middleware
