@@ -30,6 +30,8 @@ Make sure you have the following installed (I've developed this on Windows, but 
 * docker-compose build
 * docker-compose up
 
+4) Go to http://192.168.99.100:8080/
+
 #### Developing locally ####
 
 1) Install dependencies
