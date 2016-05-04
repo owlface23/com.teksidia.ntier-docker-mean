@@ -11,6 +11,8 @@ services:
     build: Api
     ports:
       - "8888:8888"
+    links:
+      - api
 
   web:
     build: Web
