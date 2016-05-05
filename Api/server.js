@@ -5,6 +5,7 @@
 var express = require('express'); // call express
 var app = express(); // define our app using express
 var bodyParser = require('body-parser');
+var config = require('./config');
 
 // parse application/json
 app.use(bodyParser.json());
@@ -14,12 +15,12 @@ app.use(bodyParser.urlencoded({ // to support URL-encoded bodies
 }));
 
 // set our port
-var port = process.env.PORT || 8888;
+var port = config.web.port;
 
 // connect to our database
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://13.95.145.127:27017/test');
-//mongoose.connect('mongodb://'+process.env.MONGO_PORT_27017_TCP_ADDR+':'+process.env.MONGO_PORT_27017_TCP_PORT+'/test');
+mongoose.connect('mongodb://' + config.mongo.host + ':' + config.mongo.port +
+  '/appDb');
 
 // middleware
 app.use(function(req, res, next) {
