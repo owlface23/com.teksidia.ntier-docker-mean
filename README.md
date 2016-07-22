@@ -35,7 +35,7 @@ IF PROXY ISSUES - try
 eval $(docker-machine env [MACHINE-NAME])
 ----------
 
-4) Go to http://192.168.99.100:8080/
+4) Go to http://192.168.99.101:8080/
 
 #### Developing locally ####
 
